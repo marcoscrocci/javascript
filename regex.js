@@ -14,3 +14,11 @@ if (regexSenha.test(senha)) {
 } else {
     console.log('Senha inválida')
 }
+
+const regexTelefone = /(\(?\d{2}\)?\s)?(\d{4,5}\-?\d{4})/g;
+const telefone = '(11) 96543-0987'
+if (regexTelefone.test(telefone)) {
+    console.log('Telefone válido')
+} else {
+    console.log('Telefone inválido')
+}
