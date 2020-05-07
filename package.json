@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Testes com a linguagem JavaScript",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoscrocci/javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoscrocci/javascript/issues"
+  },
+  "homepage": "https://github.com/marcoscrocci/javascript#readme",
+  "dependencies": {
+    "moment": "^2.25.2",
+    "xmlbuilder": "^15.1.1"
+  }
+}
