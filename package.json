@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/marcoscrocci/javascript#readme",
   "dependencies": {
-    "moment": "^2.25.2",
+    "moment": "^2.25.3",
     "xmlbuilder": "^15.1.1"
   }
 }
