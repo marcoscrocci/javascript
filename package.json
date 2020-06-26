@@ -18,6 +18,7 @@
   "homepage": "https://github.com/marcoscrocci/javascript#readme",
   "dependencies": {
     "moment": "^2.25.2",
+    "pdfmake": "^0.1.65",
     "xmlbuilder": "^15.1.1"
   }
 }
