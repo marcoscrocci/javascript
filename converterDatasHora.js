@@ -13,3 +13,6 @@ const dtRecFisicoAux = moment(dtRecFisicoDB, 'YYYYMMDDHHmmss').toDate()
 const dtRecFisico = moment(dtRecFisicoAux).format('DD/MM/YYYY HH:mm:ss')
 
 console.log('dtRecFisico:', dtRecFisico)
+
+const dtAtual = moment().format('DD/MM/YYYY HH:mm:ss')
+console.log(dtAtual)
