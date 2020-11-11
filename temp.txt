@@ -1,0 +1,2 @@
+Arquivo Texto gerado pelo Nodejs
+Quebra de linha
