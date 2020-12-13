@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; font-family: arial, sans-serif; border-bottom: 1px solid; height: 13mm;">
+        <div style="flex: 1; display: flex; align-items: flex-end; height: 100%; margin-bottom: 3mm; margin-left: 10mm;">LOGO</div>
+        <div style="flex: 3; display: flex; align-items: flex-end; height: 100%; margin-bottom: 3mm; justify-content: center; color: rgb(0, 0, 131); font-size: 24px; font-weight: bold;">Lista de Contatos</div>
+        <div style="flex: 1; display: flex; align-items: flex-end; margin-right: 10mm; display: flex; justify-content: flex-end; font-size: 10px; height: 100%; margin-bottom: 3mm;">Emitido em: <span id="datetime"></span></div>
+    </div>
+    <script type="text/javascript">
+        var d = new Date();
+        document.getElementById('datetime').innerHTML = d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+    </script>
+</body>
+</html>
