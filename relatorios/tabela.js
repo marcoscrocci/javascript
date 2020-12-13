@@ -1,5 +1,6 @@
 var pdf = require('html-pdf');
 var ejs = require('ejs');
+var moment = require('moment');
 
 var conteudo = {
     lista: [
@@ -88,6 +89,8 @@ var conteudo = {
 //     console.log(`cidade: ${contato.cidade}`); 
 // });
 
+var dataAtual = moment().format('DD/MM/YYYY HH:mm:ss')
+
 
 // https://www.npmjs.com/package/html-pdf
 const configuracao = {
@@ -106,11 +109,11 @@ const configuracao = {
         "height": "10mm",
         "contents": {
             default: `
-            <table>
+            <table style="font-family: arial, sans-serif; width: 100%;">
                 <tr>
-                    <td style="width: 25%">LOGO</td>
-                    <td style="width: 50%; text-align: center; color: rgb(0, 0, 82); font-size: 12px; font-weight: bold;">Lista de Contatos</td>
-                    <td style="width: 25%">Data/Hora</td>
+                    <th style="border: 0px solid; width: 25%;"><img style="width: 100%; height: 100%;" src="https://cdn.pixabay.com/photo/2017/01/17/14/41/pixabay-1987080_1280.png" /></th>
+                    <th style="border: 0px solid; width: 50%; font-size: 14px; color: blue;">Lista de Contatos</th>
+                    <th style="border: 0px solid; width: 25%; font-size: 9px;">${dataAtual}</th>
                 </tr>
             </table>
             `

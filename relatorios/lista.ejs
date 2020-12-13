@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <style>
-    table {
+    table.lista {
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 100%;
         font-size: 9px;
     }
 
-    th,
+    table.lista th,
     td {
         border: 1px solid #dddddd;
         text-align: left;
@@ -16,7 +16,7 @@
 
     }
 
-    tr:nth-child(even) {
+    table.lista tr:nth-child(even) {
         background-color: #dddddd;
     }
 </style>
@@ -37,7 +37,7 @@
                 <div style="height: 2mm;"></div>
             <% } %>    
             <% if (resto == 0) { %>
-                <table>
+                <table class="lista">
                     <tr>
                         <th style="background-color: rgb(0, 0, 82); color: white; width: 40%;">Nome</th>
                         <th style="background-color: rgb(0, 0, 82); color: white; width: 30%;">Telefone</th>

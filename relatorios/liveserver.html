@@ -6,14 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; font-family: arial, sans-serif; border-bottom: 1px solid; height: 13mm;">
-        <div style="flex: 1; display: flex; align-items: flex-end; height: 100%; margin-bottom: 3mm; margin-left: 10mm;">LOGO</div>
-        <div style="flex: 3; display: flex; align-items: flex-end; height: 100%; margin-bottom: 3mm; justify-content: center; color: rgb(0, 0, 131); font-size: 24px; font-weight: bold;">Lista de Contatos</div>
-        <div style="flex: 1; display: flex; align-items: flex-end; margin-right: 10mm; display: flex; justify-content: flex-end; font-size: 10px; height: 100%; margin-bottom: 3mm;">Emitido em: <span id="datetime"></span></div>
-    </div>
-    <script type="text/javascript">
-        var d = new Date();
-        document.getElementById('datetime').innerHTML = d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-    </script>
+    <table style="font-family: arial, sans-serif; width: 100%;">
+        <tr>
+            <th style="border: 1px solid; width: 25%; font-size: 9px; height: 8mm;">Logo</th>
+            <th style="border: 1px solid; width: 50%; font-size: 14px; color: blue;">Lista de Contatos</th>
+            <th style="border: 1px solid; width: 25%; font-size: 9px;">Data/Hora</th>
+        </tr>
+    </table>
 </body>
 </html>
