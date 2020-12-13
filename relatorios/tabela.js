@@ -106,7 +106,13 @@ const configuracao = {
         "height": "10mm",
         "contents": {
             default: `
-            <div style="text-align: center; color: rgb(0, 0, 82); font-size: 24px; font-weight: bold;">Lista de Contatos</div>
+            <table>
+                <tr>
+                    <td style="width: 25%">LOGO</td>
+                    <td style="width: 50%; text-align: center; color: rgb(0, 0, 82); font-size: 12px; font-weight: bold;">Lista de Contatos</td>
+                    <td style="width: 25%">Data/Hora</td>
+                </tr>
+            </table>
             `
         },
     },
@@ -116,7 +122,16 @@ const configuracao = {
             default: '<div style="text-align: right; font-size: 9px;"><span style="color: #444;">Página: {{page}}</span>/<span>{{pages}}</span></div>', // fallback value
         }
     },
+
+    // Script options
+    "phantomPath": "../node_modules/phantomjs/bin/phantomjs", // PhantomJS binary which should get downloaded automatically
+    "phantomArgs": [], // array of strings used as phantomjs args e.g. ["--ignore-ssl-errors=yes"]
+    //"script": '/url',           // Absolute path to a custom phantomjs script, use the file in lib/scripts as example
+    "timeout": 30000           // Timeout that will cancel phantomjs, in milliseconds
+
 }
+
+//const teste = require('../node_modules/phantomjs/bin/phantomjs')
 
 //ejs.renderFile("./tabela.ejs", conteudo, (err, html) => {
 ejs.renderFile("./lista.ejs", conteudo, (err, html) => {

@@ -30,6 +30,7 @@
     "moment": "^2.25.2",
     "node-cron": "^2.0.3",
     "pdfmake": "^0.1.65",
+    "phantomjs": "^2.1.7",
     "xmlbuilder": "^15.1.1"
   }
 }
