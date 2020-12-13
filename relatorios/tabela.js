@@ -111,9 +111,9 @@ const configuracao = {
         },
     },
     "footer": {
-        "height": "9mm",
+        "height": "10mm",
         "contents": {
-            default: '<div style="text-align: right; margin-top: 10mm;"><span style="color: #444;">Página: {{page}}</span>/<span>{{pages}}</span></div>', // fallback value
+            default: '<div style="text-align: right; font-size: 9px;"><span style="color: #444;">Página: {{page}}</span>/<span>{{pages}}</span></div>', // fallback value
         }
     },
 }
