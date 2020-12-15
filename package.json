@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "moment": "^2.25.2",
+    "moment-timezone": "^0.5.32",
     "node-cron": "^2.0.3",
     "pdfmake": "^0.1.65",
     "xmlbuilder": "^15.1.1"
