@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<style>
+    table.lista {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 9px;
+    }
+
+    table.lista th,
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+
+    }
+
+    table.lista tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+</head>
+
+<body>
+    <div>
+        <% var linhasPorPagina = 32 %>
+        <% for (let i = 0; i < lista.length; i++) { %>
+            <% var contato = lista[i]; %>
+            <% const resto = i % linhasPorPagina; %>
+            <% if (i == 0) { // corrigir uma diferença de altura da primeira página %>
+                <div style="height: 2mm;"></div>
+            <% } %>    
+            <% if (resto == 0) { %>
+                <table class="lista">
+                    <tr>
+                        <th style="background-color: rgb(0, 0, 82); color: white; width: 40%;">Nome</th>
+                        <th style="background-color: rgb(0, 0, 82); color: white; width: 30%;">Telefone</th>
+                        <th style="background-color: rgb(0, 0, 82); color: white; width: 30%;">Cidade</th>
+                    </tr>
+            <% } %>
+                    <tr>
+                        <td style="width: 40%;">
+                            <%= contato.nome %>
+                        </td>
+                        <td style="width: 30%;">
+                            <%= contato.telefone %>
+                        </td>
+                        <td style="width: 30%;">
+                            <%= contato.cidade %>
+                        </td>
+                    </tr>
+            <% if (resto == linhasPorPagina - 1) { %>
+                </table>
+                <% if (i != lista.length - 1) { %>
+                    <div style="page-break-before:always">&nbsp;</div>
+                <% } %>
+            <% } %>
+        <% } %>
+    </div>
+</body>
+
+</html>

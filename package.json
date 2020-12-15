@@ -21,13 +21,17 @@
     "axios": "^0.19.2",
     "bcrypt": "^5.0.0",
     "bcrypt-nodejs": "0.0.3",
+    "cep-promise": "^4.0.2",
+    "ejs": "^3.1.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
     "moment": "^2.25.2",
     "moment-timezone": "^0.5.32",
     "node-cron": "^2.0.3",
     "pdfmake": "^0.1.65",
+    "phantomjs": "^2.1.7",
     "xmlbuilder": "^15.1.1"
   }
 }
