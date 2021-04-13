@@ -24,6 +24,7 @@
     "cep-promise": "^4.0.2",
     "ejs": "^3.1.5",
     "esm": "^3.2.25",
+    "excel4node": "^1.7.2",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "html-pdf": "^2.2.0",
@@ -32,6 +33,7 @@
     "node-cron": "^2.0.3",
     "pdfmake": "^0.1.65",
     "phantomjs": "^2.1.7",
+    "xlsx": "^0.16.9",
     "xmlbuilder": "^15.1.1"
   }
 }
